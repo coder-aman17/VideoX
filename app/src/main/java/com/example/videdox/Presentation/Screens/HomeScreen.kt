@@ -28,6 +28,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 
 
+//This is TabLayout
 @Composable
 fun HomeScreen(navController: NavHostController) {
     var tabItems = listOf(
