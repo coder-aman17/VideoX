@@ -92,30 +92,10 @@ fun HomeScreen(navController: NavHostController) {
                 .fillMaxWidth()
         ) { index ->
             when (index) {
-                0 -> FolderScreen()
-                1 -> VideosScreen()
+                0 -> Folder(navController)
+                1 -> Videos(navController)
             }
         }
-    }
-}
-
-@Composable
-fun FolderScreen() {
-    Box(
-        modifier = Modifier.fillMaxSize(),
-        contentAlignment = Alignment.Center
-    ) {
-        Text(text = "Folder Content")
-    }
-}
-
-@Composable
-fun VideosScreen() {
-    Box(
-        modifier = Modifier.fillMaxSize(),
-        contentAlignment = Alignment.Center
-    ) {
-        Text(text = "Videos Content")
     }
 }
 
